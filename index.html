@@ -378,7 +378,7 @@ html[lang="ar"] .fcol h5{font-family:'PlexAr',sans-serif;letter-spacing:0;font-s
     </div>
     <div class="dd">
       <div class="box yes">
-        <h4><span class="tag">نعم</span> <span data-ar="نلتزم به" data-en="we commit to this">نلتزم به</span></h4>
+        <h4><span class="tag" data-ar="نعم" data-en="YES">نعم</span> <span data-ar="نلتزم به" data-en="we commit to this">نلتزم به</span></h4>
         <ul>
           <li data-ar="وساطة فقط — اسمنا في سطر الوسيط" data-en="Brokerage only — our name on the broker line">وساطة فقط — اسمنا في سطر الوسيط</li>
           <li data-ar="عمولة معروفة ومذكورة في العقد" data-en="A commission that is known and named in the charter party">عمولة معروفة ومذكورة في العقد</li>
@@ -387,7 +387,7 @@ html[lang="ar"] .fcol h5{font-family:'PlexAr',sans-serif;letter-spacing:0;font-s
         </ul>
       </div>
       <div class="box no">
-        <h4><span class="tag">لا</span> <span data-ar="نرفضه" data-en="we will not do this">نرفضه</span></h4>
+        <h4><span class="tag" data-ar="لا" data-en="NO">لا</span> <span data-ar="نرفضه" data-en="we will not do this">نرفضه</span></h4>
         <ul>
           <li data-ar="لا نملك سفناً ولا نُشغّلها" data-en="Own or operate no vessels">لا نملك سفناً ولا نُشغّلها</li>
           <li data-ar="لا نتاجر بالبضاعة ولا نتحمّل مخاطر الرحلة" data-en="Trade no cargo and carry no voyage risk">لا نتاجر بالبضاعة ولا نتحمّل مخاطر الرحلة</li>
@@ -429,7 +429,7 @@ html[lang="ar"] .fcol h5{font-family:'PlexAr',sans-serif;letter-spacing:0;font-s
         <div class="crow"><span class="k" data-ar="الهاتف" data-en="Phone">الهاتف</span>
           <span class="v"><span class="ph">[ +966  __ ___ ____ ]</span></span></div>
         <div class="crow"><span class="k" data-ar="السجل التجاري" data-en="CR No.">السجل التجاري</span>
-          <span class="v"><span class="ph">[ يُستكمل بعد التسجيل ]</span></span></div>
+          <span class="v"><span class="ph" data-ar="[ يُستكمل بعد التسجيل ]" data-en="[ to be completed after registration ]">[ يُستكمل بعد التسجيل ]</span></span></div>
         <p class="note" data-ar="يُرسل الاستفسار مع: نوع البضاعة، الحجم بالطن، ميناء التحميل والتفريغ، ونافذة التحميل (Laycan)."
            data-en="Send with your enquiry: commodity, quantity in tonnes, load and discharge ports, and laycan.">
            يُرسل الاستفسار مع: نوع البضاعة، الحجم بالطن، ميناء التحميل والتفريغ، ونافذة التحميل (Laycan).</p>
@@ -480,6 +480,7 @@ html[lang="ar"] .fcol h5{font-family:'PlexAr',sans-serif;letter-spacing:0;font-s
 /* ---------------------------------------------------------------- i18n */
 (function(){
   var original = {};           // stores the Arabic markup for every node (source of truth)
+  var titleAr = document.title;
   var nodes = document.querySelectorAll('[data-ar]');
   nodes.forEach(function(n,i){ original[i] = n.innerHTML; });
 
@@ -493,7 +494,7 @@ html[lang="ar"] .fcol h5{font-family:'PlexAr',sans-serif;letter-spacing:0;font-s
     });
     document.getElementById('langbtn').textContent = (lang === 'ar') ? 'EN' : 'عربي';
     document.title = (lang === 'ar')
-      ? 'بيت الشحن السعودي | Saudi Shipping House — وساطة بحرية واستئجار سفن'
+      ? titleAr
       : 'Saudi Shipping House | Saudi Shipbroking & Chartering — Riyadh';
     try { localStorage.setItem('ssh-lang', lang); } catch(e){}
   }
