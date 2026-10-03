@@ -448,7 +448,7 @@ html[lang="ar"] .fcol h5{font-family:'PlexAr',sans-serif;letter-spacing:0;font-s
   <div class="wrap">
     <div class="fgrid">
       <div>
-        <img src="assets/img/logo-navy.svg" alt="Saudi Shipping House">
+        <img src="assets/img/logo.svg" alt="Saudi Shipping House">
         <p data-ar="بيت الشحن السعودي — وساطة بحرية واستئجار سفن. نعمل من الرياض على الخليج والبحر الأحمر."
            data-en="Saudi Shipping House — shipbroking and chartering, working from Riyadh across the Gulf and the Red Sea.">
            بيت الشحن السعودي — وساطة بحرية واستئجار سفن. نعمل من الرياض على الخليج والبحر الأحمر.</p>
@@ -492,6 +492,9 @@ html[lang="ar"] .fcol h5{font-family:'PlexAr',sans-serif;letter-spacing:0;font-s
       else if (val !== null) { n.innerHTML = val; }
     });
     document.getElementById('langbtn').textContent = (lang === 'ar') ? 'EN' : 'عربي';
+    document.title = (lang === 'ar')
+      ? 'بيت الشحن السعودي | Saudi Shipping House — وساطة بحرية واستئجار سفن'
+      : 'Saudi Shipping House | Saudi Shipbroking & Chartering — Riyadh';
     try { localStorage.setItem('ssh-lang', lang); } catch(e){}
   }
 
