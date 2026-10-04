@@ -1,224 +1,25 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" data-title-en="Saudi Shipping House | Saudi Shipbroking &amp; Maritime Advisory">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>بيت الشحن السعودي | Saudi Shipping House — وساطة بحرية واستئجار سفن</title>
-<meta name="description" content="بيت الشحن السعودي — وسيط بحري مستقل في الرياض. استئجار السفن، وساطة البضائع، وبيع وشراء السفن. لا نملك سفناً ولا نتاجر بالبضاعة.">
+<title>بيت الشحن السعودي | أول بيت وساطة بحرية سعودي</title>
+<meta name="description" content="بيت الشحن السعودي (SSH) — أول شركة سعودية متخصصة في الوساطة البحرية والاستشارات الملاحية. استئجار، بيع وشراء، بحوث، استشارات مالية، أوفشور، وحلول رقمية.">
+<!-- TEMP DEPLOY ONLY: remove when the site moves to sshs.sa -->
+<meta name="robots" content="noindex,nofollow">
+<meta property="og:title" content="بيت الشحن السعودي | أول بيت وساطة بحرية سعودي">
+<meta property="og:description" content="بيت الشحن السعودي (SSH) — أول شركة سعودية متخصصة في الوساطة البحرية والاستشارات الملاحية. استئجار، بيع وشراء، بحوث، استشارات مالية، أوفشور، وحلول رقمية.">
+<meta property="og:image" content="assets/img/og-image.png">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://sshs.sa/">
 <link rel="icon" href="assets/img/favicon.ico">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-<!-- TEMP DEPLOY ONLY: remove this line when the site moves to sshs.sa -->
-<meta name="robots" content="noindex,nofollow">
-<meta property="og:title" content="Saudi Shipping House — وساطة بحرية واستئجار سفن">
-<meta property="og:description" content="وسيط بحري مستقل. نُقرّب بين المالك والمستأجر ونتفاوض على اتفاقية الاستئجار. لا نملك سفناً.">
-<meta property="og:image" content="assets/img/og-image.png">
-<style>
-/* ---------------------------------------------------------------- fonts */
-@font-face{font-family:'BC';src:url('assets/fonts/BarlowCondensed-Medium.ttf') format('truetype');font-weight:500;font-style:normal;font-display:swap}
-@font-face{font-family:'BC';src:url('assets/fonts/BarlowCondensed-SemiBold.ttf') format('truetype');font-weight:600;font-style:normal;font-display:swap}
-@font-face{font-family:'BC';src:url('assets/fonts/BarlowCondensed-Bold.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap}
-@font-face{font-family:'BC';src:url('assets/fonts/BarlowCondensed-ExtraBold.ttf') format('truetype');font-weight:800;font-style:normal;font-display:swap}
-@font-face{font-family:'Barlow';src:url('assets/fonts/Barlow-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
-@font-face{font-family:'Barlow';src:url('assets/fonts/Barlow-Medium.ttf') format('truetype');font-weight:500;font-display:swap}
-@font-face{font-family:'Barlow';src:url('assets/fonts/Barlow-SemiBold.ttf') format('truetype');font-weight:600;font-display:swap}
-@font-face{font-family:'Barlow';src:url('assets/fonts/Barlow-Bold.ttf') format('truetype');font-weight:700;font-display:swap}
-@font-face{font-family:'Inter';src:url('assets/fonts/Inter-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
-@font-face{font-family:'Inter';src:url('assets/fonts/Inter-SemiBold.ttf') format('truetype');font-weight:600;font-display:swap}
-@font-face{font-family:'PlexAr';src:url('assets/fonts/IBMPlexSansArabic-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
-@font-face{font-family:'PlexAr';src:url('assets/fonts/IBMPlexSansArabic-Medium.ttf') format('truetype');font-weight:500;font-display:swap}
-@font-face{font-family:'PlexAr';src:url('assets/fonts/IBMPlexSansArabic-SemiBold.ttf') format('truetype');font-weight:600;font-display:swap}
-@font-face{font-family:'PlexAr';src:url('assets/fonts/IBMPlexSansArabic-Bold.ttf') format('truetype');font-weight:700;font-display:swap}
-@font-face{font-family:'JBM';src:url('assets/fonts/JBM-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
-@font-face{font-family:'JBM';src:url('assets/fonts/JBM-Medium.ttf') format('truetype');font-weight:500;font-display:swap}
-
-:root{
-  --navy:#0A1B2E; --navy-2:#06111F; --panel:#0F2438; --panel-2:#132C44;
-  --brass:#C9A227; --brass-lt:#E8CE79; --brass-dk:#9C7B16;
-  --teal:#137A8D; --teal-lt:#5FBFCE;
-  --paper:#F5F2EA; --paper-2:#E8E3D7; --dim:#9FB0C2; --dim-2:#6C8199;
-  --line:rgba(201,162,39,.20); --line-2:rgba(159,176,194,.14);
-  --maxw:1180px;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-  background:var(--navy); color:var(--paper);
-  font-family:'PlexAr','Inter',system-ui,sans-serif;
-  font-size:16.5px; line-height:1.75; -webkit-font-smoothing:antialiased;
-  overflow-x:hidden;
-}
-html[lang="en"] body{font-family:'Inter',system-ui,sans-serif;line-height:1.7}
-h1,h2,h3,.disp{font-family:'PlexAr',sans-serif;font-weight:700;line-height:1.18;letter-spacing:0}
-html[lang="en"] h1,html[lang="en"] h2,html[lang="en"] h3,html[lang="en"] .disp{
-  font-family:'BC',sans-serif;font-weight:800;text-transform:uppercase;line-height:1.02;letter-spacing:.005em}
-img{max-width:100%;display:block}
-a{color:inherit;text-decoration:none}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
-.mono{font-family:'JBM',monospace;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase}
-.eyebrow{font-family:'JBM',monospace;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass)}
-html[lang="ar"] .eyebrow{font-family:'PlexAr',sans-serif;letter-spacing:.04em;font-size:13px;font-weight:600}
-section{border-top:1px solid var(--line-2)}
-.pad{padding:88px 0}
-@media(max-width:760px){.pad{padding:60px 0}}
-
-/* ---------------------------------------------------------------- nav */
-header{position:sticky;top:0;z-index:50;background:rgba(10,27,46,.92);
-  backdrop-filter:blur(12px);border-bottom:1px solid var(--line-2)}
-.nav{display:flex;align-items:center;gap:26px;height:74px}
-.brand{display:flex;align-items:center;gap:13px;flex-shrink:0}
-.brand img{height:40px;width:40px}
-.brand .txt{display:flex;flex-direction:column;line-height:1.1}
-.brand .n{font-family:'BC',sans-serif;font-weight:800;font-size:24px;letter-spacing:.13em;color:var(--paper)}
-.brand .s{font-size:10.5px;color:var(--brass);letter-spacing:.04em;margin-top:2px;white-space:nowrap}
-nav.links{display:flex;gap:24px;margin-inline-start:auto;font-size:14.5px;color:var(--dim)}
-nav.links a{padding:6px 0;border-bottom:1px solid transparent;transition:.2s;white-space:nowrap}
-nav.links a:hover{color:var(--paper);border-bottom-color:var(--brass)}
-.lang{font-family:'JBM',monospace;font-size:11.5px;letter-spacing:.14em;
-  border:1px solid var(--line);color:var(--brass);padding:7px 13px;border-radius:2px;cursor:pointer;
-  background:transparent;transition:.2s;line-height:1;white-space:nowrap;
-  flex-grow:0;flex-shrink:0;flex-basis:auto;width:auto;min-width:0;align-self:center}
-.lang:hover{background:var(--brass);color:var(--navy);border-color:var(--brass)}
-.burger{display:none;background:none;border:1px solid var(--line);color:var(--brass);
-  padding:7px 11px;border-radius:2px;cursor:pointer;font-size:16px}
-@media(max-width:900px){
-  nav.links{display:none}
-  nav.links.open{display:flex;position:absolute;top:74px;inset-inline:0;flex-direction:column;
-    background:var(--panel);padding:18px 26px;gap:14px;border-bottom:1px solid var(--line)}
-  .burger{display:block;margin-inline-start:auto}
-  .lang{margin-inline-start:0}
-}
-
-/* ---------------------------------------------------------------- hero */
-.hero{position:relative;padding:96px 0 84px;border-top:none;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;
-  background:
-    radial-gradient(900px 520px at 82% -10%,rgba(19,122,141,.22),transparent 62%),
-    radial-gradient(720px 460px at 6% 108%,rgba(201,162,39,.13),transparent 66%);
-  pointer-events:none}
-.hero .wrap{position:relative;display:grid;grid-template-columns:1.32fr .68fr;gap:54px;align-items:center}
-.hero h1{font-size:clamp(34px,4.5vw,58px);margin:20px 0 20px}
-html[lang="en"] .hero h1{font-size:clamp(38px,5.4vw,72px)}
-.hero h1 .em{color:var(--brass)}
-.lede{font-size:18px;color:var(--dim);max-width:62ch;margin-bottom:30px}
-.hero .crest{display:flex;justify-content:center}
-.hero .crest img{width:100%;max-width:330px;filter:drop-shadow(0 18px 44px rgba(0,0,0,.5))}
-.chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px}
-.chip{font-family:'JBM',monospace;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;
-  border:1px solid var(--line);color:var(--brass-lt);padding:6px 12px;border-radius:2px}
-html[lang="ar"] .chip{font-family:'PlexAr',sans-serif;letter-spacing:0;font-size:12.5px;font-weight:600}
-.cta{display:flex;flex-wrap:wrap;gap:13px}
-.btn{display:inline-block;padding:14px 27px;border-radius:2px;font-weight:600;font-size:15px;
-  transition:.2s;border:1px solid transparent;cursor:pointer}
-.btn-p{background:var(--brass);color:var(--navy)}
-.btn-p:hover{background:var(--brass-lt)}
-.btn-s{border-color:var(--line);color:var(--paper)}
-.btn-s:hover{border-color:var(--brass);color:var(--brass)}
-@media(max-width:900px){
-  .hero .wrap{grid-template-columns:1fr;text-align:center}
-  .hero .crest{order:-1}
-  .hero .crest img{max-width:210px}
-  .chips,.cta{justify-content:center}
-  .lede{margin-inline:auto}
-}
-
-/* ---------------------------------------------------------------- sections */
-.head{max-width:74ch;margin-bottom:46px}
-.head h2{font-size:clamp(26px,3vw,40px);margin:14px 0 14px}
-.head h2 .em{color:var(--brass);font-style:italic}
-.head p{color:var(--dim);font-size:17px}
-
-.grid{display:grid;gap:18px}
-.g3{grid-template-columns:repeat(3,1fr)}
-.g2{grid-template-columns:repeat(2,1fr)}
-.g4{grid-template-columns:repeat(4,1fr)}
-@media(max-width:940px){.g3,.g4{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:640px){.g2,.g3,.g4{grid-template-columns:1fr}}
-
-.card{background:linear-gradient(160deg,var(--panel),var(--navy-2));
-  border:1px solid var(--line-2);border-radius:3px;padding:27px 24px;position:relative;
-  transition:.25s}
-.card:hover{border-color:var(--line);transform:translateY(-3px)}
-.card .num{font-family:'JBM',monospace;font-size:11px;letter-spacing:.18em;color:var(--brass);opacity:.85}
-.card h3{font-size:20px;margin:13px 0 9px}
-html[lang="en"] .card h3{font-size:23px}
-.card p{color:var(--dim);font-size:15.2px}
-.card .ic{width:34px;height:34px;margin-bottom:14px}
-
-/* ---------------------------------------------------------------- process */
-.steps{counter-reset:s;display:grid;gap:0}
-.step{display:grid;grid-template-columns:74px 1fr;gap:22px;padding:26px 0;
-  border-bottom:1px solid var(--line-2);align-items:start}
-.step:last-child{border-bottom:none}
-.step .k{font-family:'JBM',monospace;font-size:13px;letter-spacing:.1em;color:var(--brass);
-  padding-top:3px}
-.step h3{font-size:19px;margin-bottom:7px}
-html[lang="en"] .step h3{font-size:22px}
-.step p{color:var(--dim);font-size:15.2px}
-@media(max-width:560px){.step{grid-template-columns:1fr;gap:6px}}
-
-/* ---------------------------------------------------------------- split */
-.split{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
-@media(max-width:900px){.split{grid-template-columns:1fr}}
-
-/* do / don't */
-.dd{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-@media(max-width:640px){.dd{grid-template-columns:1fr}}
-.box{border:1px solid var(--line-2);border-radius:3px;padding:22px}
-.box.yes{border-color:var(--line);background:rgba(201,162,39,.045)}
-.box.no{background:rgba(10,27,46,.5)}
-.box h4{font-size:16px;margin-bottom:13px;display:flex;align-items:center;gap:9px}
-.box .tag{font-family:'JBM',monospace;font-size:12px}
-.box.yes .tag{color:var(--brass)}
-.box.no .tag{color:var(--dim-2)}
-.box ul{list-style:none;display:flex;flex-direction:column;gap:9px}
-.box li{font-size:15px;color:var(--dim);padding-inline-start:20px;position:relative}
-.box li::before{content:"—";position:absolute;inset-inline-start:0;color:var(--dim-2)}
-.box.yes li::before{content:"✓";color:var(--brass)}
-
-/* ---------------------------------------------------------------- stat strip */
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-2);
-  border:1px solid var(--line-2);border-radius:3px;overflow:hidden}
-.stat{background:var(--navy);padding:28px 22px;text-align:center}
-.stat .v{font-family:'BC',sans-serif;font-weight:800;font-size:38px;color:var(--brass);letter-spacing:.02em}
-.stat .l{font-size:13.5px;color:var(--dim);margin-top:6px}
-@media(max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}}
-
-/* ---------------------------------------------------------------- contact */
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:44px}
-@media(max-width:820px){.contact{grid-template-columns:1fr}}
-.crow{display:flex;gap:15px;padding:17px 0;border-bottom:1px solid var(--line-2);align-items:baseline}
-.crow .k{font-family:'JBM',monospace;font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;
-  color:var(--brass);min-width:104px}
-html[lang="ar"] .crow .k{font-family:'PlexAr',sans-serif;letter-spacing:0;font-size:12.5px;font-weight:600}
-.crow .v{color:var(--dim);font-size:15.5px}
-.crow .v strong{color:var(--paper);font-weight:600}
-.ph{color:var(--brass-dk);border-bottom:1px dashed var(--brass-dk);font-family:'JBM',monospace;
-  font-size:12.5px;letter-spacing:.04em}
-.note{margin-top:26px;padding:17px 19px;border-inline-start:2px solid var(--brass);
-  background:rgba(201,162,39,.05);font-size:14px;color:var(--dim);border-radius:2px}
-
-/* ---------------------------------------------------------------- footer */
-footer{border-top:1px solid var(--line);padding:46px 0 40px;background:var(--navy-2)}
-.fgrid{display:grid;grid-template-columns:1.3fr .7fr .7fr;gap:36px;margin-bottom:34px}
-@media(max-width:760px){.fgrid{grid-template-columns:1fr;gap:26px}}
-.fgrid img{height:52px;margin-bottom:15px}
-.fgrid p{color:var(--dim-2);font-size:14px;max-width:44ch}
-.fcol h5{font-family:'JBM',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--brass);margin-bottom:14px}
-html[lang="ar"] .fcol h5{font-family:'PlexAr',sans-serif;letter-spacing:0;font-size:13px;font-weight:700}
-.fcol a{display:block;color:var(--dim);font-size:14.5px;padding:5px 0}
-.fcol a:hover{color:var(--brass)}
-.legal{border-top:1px solid var(--line-2);padding-top:22px;display:flex;justify-content:space-between;
-  gap:22px;flex-wrap:wrap;color:var(--dim-2);font-size:12.5px;line-height:1.7}
-.legal .r{max-width:70ch}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
-</style>
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-
 <header>
   <div class="wrap nav">
-    <a class="brand" href="#top">
+    <a class="brand" href="index.html">
       <img src="assets/img/logo.svg" alt="Saudi Shipping House">
       <span class="txt">
         <span class="n">SSH</span>
@@ -227,238 +28,161 @@ html[lang="ar"] .fcol h5{font-family:'PlexAr',sans-serif;letter-spacing:0;font-s
     </a>
     <button class="burger" aria-label="القائمة" onclick="document.querySelector('nav.links').classList.toggle('open')">☰</button>
     <nav class="links">
-      <a href="#services"    data-ar="خدماتنا"     data-en="Services">خدماتنا</a>
-      <a href="#process"     data-ar="كيف نعمل"     data-en="How we work">كيف نعمل</a>
-      <a href="#discipline"  data-ar="حدود عملنا"   data-en="Our boundaries">حدود عملنا</a>
-      <a href="#contact"     data-ar="تواصل"        data-en="Contact">تواصل</a>
+      <a href="index.html" data-ar="الرئيسية" data-en="Home" aria-current="page">الرئيسية</a>
+      <a href="about.html" data-ar="من نحن" data-en="About">من نحن</a>
+      <a href="services.html" data-ar="خدماتنا" data-en="Services">خدماتنا</a>
+      <a href="leadership.html" data-ar="القيادة" data-en="Leadership">القيادة</a>
+      <a href="contact.html" data-ar="تواصل" data-en="Contact">تواصل</a>
     </nav>
     <button class="lang" id="langbtn">EN</button>
   </div>
 </header>
-
 <main id="top">
 
 <!-- ============================================================ HERO -->
 <section class="hero">
   <div class="wrap">
     <div>
-      <p class="eyebrow" data-ar="وساطة بحرية · استئجار سفن" data-en="Shipbroking · Chartering">وساطة بحرية · استئجار سفن</p>
-      <h1 data-ar="وسيط بحري مستقل، لا يملك السفينة." data-en="An independent broker. <span class='em'>Not</span> an owner.">
-        وسيط بحري مستقل، لا يملك السفينة.</h1>
-      <p class="lede"
-         data-ar="نُقرّب بين صاحب السفينة والمستأجر، نتفاوض على اتفاقية الاستئجار، وننهي التثبيت. نقف في الوسط بالمعنى الحرفي: لا نملك سفناً، ولا نتاجر بالبضاعة، ولا نتحمّل مخاطر الرحلة."
-         data-en="We bring owners and charterers together, negotiate the charter party, and close the fixture. We stand in the middle literally: no ships of our own, no trading in cargo, no voyage risk on our books.">
-        نُقرّب بين صاحب السفينة والمستأجر، نتفاوض على اتفاقية الاستئجار، وننهي التثبيت. نقف في الوسط بالمعنى الحرفي: لا نملك سفناً، ولا نتاجر بالبضاعة، ولا نتحمّل مخاطر الرحلة.</p>
+      <p class="eyebrow" data-ar="أول بيت وساطة بحرية سعودي" data-en="The First Saudi Shipbroking House">أول بيت وساطة بحرية سعودي</p>
+      <h1 data-ar="بيت الشحن السعودي —<br><span class='em'>الوساطة البحرية السعودية الأولى</span>" data-en="Saudi Shipping House —<br><span class='em'>the Kingdom's own shipbroker</span>">بيت الشحن السعودي —<br><span class='em'>الوساطة البحرية السعودية الأولى</span></h1>
+      <p class="lede" data-ar="أول شركة سعودية متخصصة في الوساطة البحرية والاستشارات الملاحية. وُلدنا من طموح سعودي ونعمل بمعايير عالمية، لنقدّم حلولاً بحرية دقيقة وشفّافة ومبتكرة لمالكي السفن والمستأجرين والتجار وشركات الطاقة حول العالم." data-en="The first dedicated shipbroking and maritime advisory firm in Saudi Arabia. Born from Saudi ambition and driven by international standards, we deliver precise, transparent and innovative maritime solutions to shipowners, charterers, traders and energy companies worldwide.">أول شركة سعودية متخصصة في الوساطة البحرية والاستشارات الملاحية. وُلدنا من طموح سعودي ونعمل بمعايير عالمية، لنقدّم حلولاً بحرية دقيقة وشفّافة ومبتكرة لمالكي السفن والمستأجرين والتجار وشركات الطاقة حول العالم.</p>
       <div class="chips">
-        <span class="chip" data-ar="سائب جاف" data-en="Dry bulk">سائب جاف</span>
-        <span class="chip" data-ar="ناقلات" data-en="Tankers">ناقلات</span>
-        <span class="chip" data-ar="رحلات · زمني · إعادة إيجار" data-en="Voyage · Time · Relet">رحلات · زمني · إعادة إيجار</span>
-        <span class="chip" data-ar="الخليج والبحر الأحمر" data-en="Gulf &amp; Red Sea">الخليج والبحر الأحمر</span>
+        <span class="chip" data-ar="استئجار" data-en="Chartering">استئجار</span>
+        <span class="chip" data-ar="بيع وشراء" data-en="Sale &amp; Purchase">بيع وشراء</span>
+        <span class="chip" data-ar="بحوث بحرية" data-en="Maritime Research">بحوث بحرية</span>
+        <span class="chip" data-ar="استشارات مالية" data-en="Financial Advisory">استشارات مالية</span>
+        <span class="chip" data-ar="أوفشور وطاقة متجددة" data-en="Offshore &amp; Renewables">أوفشور وطاقة متجددة</span>
+        <span class="chip" data-ar="حلول رقمية" data-en="Digital Solutions">حلول رقمية</span>
       </div>
       <div class="cta">
-        <a class="btn btn-p" href="#contact" data-ar="ابدأ محادثة" data-en="Start a conversation">ابدأ محادثة</a>
-        <a class="btn btn-s" href="#services" data-ar="خدماتنا" data-en="What we do">خدماتنا</a>
+        <a class="btn btn-p" href="contact.html" data-ar="ابدأ محادثة" data-en="Start a conversation">ابدأ محادثة</a>
+        <a class="btn btn-s" href="services.html" data-ar="خدماتنا" data-en="What we do">خدماتنا</a>
       </div>
     </div>
     <div class="crest"><img src="assets/img/logo.svg" alt=""></div>
   </div>
 </section>
 
-<!-- ============================================================ SERVICES -->
-<section id="services" class="pad">
+<!-- ============================================================ ABOUT -->
+<section id="about" class="pad">
   <div class="wrap">
     <div class="head">
-      <p class="eyebrow" data-ar="خدماتنا" data-en="01 — Services">خدماتنا</p>
-      <h2 data-ar="ما نفعله فعلاً" data-en="What we actually do">ما نفعله <span class="em">فعلاً</span></h2>
-      <p data-ar="خمس خدمات، كلها داخل الوساطة. لا خط شحن، ولا تخليص، ولا نقل بري."
-         data-en="Five services, all inside brokerage. No liner agency, no customs clearance, no trucking.">
-         خمس خدمات، كلها داخل الوساطة. لا خط شحن، ولا تخليص، ولا نقل بري.</p>
+      <p class="eyebrow" data-ar="من نحن" data-en="About us">من نحن</p>
+      <h2 data-ar="أول بيت <span class='em'>وساطة بحرية</span> سعودي" data-en="The First Saudi <span class='em'>Shipbroking</span> House">أول بيت <span class='em'>وساطة بحرية</span> سعودي</h2>
+    </div>
+    <div class="prose" style="max-width:88ch">
+      <p data-ar="بيت الشحن السعودي (SSH) هو أول شركة متخصصة في الوساطة البحرية والاستشارات الملاحية في المملكة العربية السعودية، أُسِّست لدعم حضور المملكة المتنامي في التجارة العالمية والخدمات اللوجستية. وُلدت من طموح سعودي وتعمل بمعايير دولية، وتقدّم SSH حلولاً بحرية دقيقة وشفّافة ومبتكرة لمالكي السفن والمستأجرين والتجار وشركات الطاقة والعملاء الصناعيين حول العالم." data-en="Saudi Shipping House (SSH) is the first dedicated shipbroking and maritime advisory firm in Saudi Arabia, created to support the Kingdom's growing influence in global trade and logistics. Born from Saudi ambition and driven by international standards, SSH delivers precise, transparent and innovative maritime solutions to shipowners, charterers, traders, energy companies and industrial clients worldwide.">بيت الشحن السعودي (SSH) هو أول شركة متخصصة في الوساطة البحرية والاستشارات الملاحية في المملكة العربية السعودية، أُسِّست لدعم حضور المملكة المتنامي في التجارة العالمية والخدمات اللوجستية. وُلدت من طموح سعودي وتعمل بمعايير دولية، وتقدّم SSH حلولاً بحرية دقيقة وشفّافة ومبتكرة لمالكي السفن والمستأجرين والتجار وشركات الطاقة والعملاء الصناعيين حول العالم.</p>
+      <p data-ar="يعكس بيت الشحن السعودي روح حقبة جديدة — حيث تتلاقى الخبرة السعودية والتقنية والرؤية الاستراتيجية لترسم مستقبل التجارة البحرية." data-en="SSH reflects the spirit of a new era — where Saudi expertise, technology and strategic vision come together to shape the future of maritime commerce.">يعكس بيت الشحن السعودي روح حقبة جديدة — حيث تتلاقى الخبرة السعودية والتقنية والرؤية الاستراتيجية لترسم مستقبل التجارة البحرية.</p>
+    </div>
+
+    <div class="vm" style="margin-top:38px">
+      <div class="box hi">
+        <p class="eyebrow" data-ar="رؤيتنا" data-en="Our Vision">رؤيتنا</p>
+        <h3 data-ar="رؤيتنا" data-en="Our Vision">رؤيتنا</h3>
+        <p data-ar="أن نرسّخ بيت الشحن السعودي كالشركة الرائدة في الوساطة البحرية والاستشارات الملاحية في الشرق الأوسط — قائد وُلد في السعودية، يرفع دور المملكة في التجارة العالمية، ويعزّز القدرات البحرية الوطنية، ويدعم تحوّل المملكة إلى مركز لوجستي وبحري عالمي مستلهم من رؤية 2030." data-en="To position Saudi Shipping House as the premier shipbroking and maritime advisory firm in the Middle East — a Saudi-born leader advancing the Kingdom's role in global trade, strengthening national maritime capabilities, and supporting the transformation of Saudi Arabia into a world-class logistics and maritime hub inspired by Vision 2030.">أن نرسّخ بيت الشحن السعودي كالشركة الرائدة في الوساطة البحرية والاستشارات الملاحية في الشرق الأوسط — قائد وُلد في السعودية، يرفع دور المملكة في التجارة العالمية، ويعزّز القدرات البحرية الوطنية، ويدعم تحوّل المملكة إلى مركز لوجستي وبحري عالمي مستلهم من رؤية 2030.</p>
+      </div>
+      <div class="box">
+        <p class="eyebrow" data-ar="مهمتنا" data-en="Our Mission">مهمتنا</p>
+        <h3 data-ar="مهمتنا" data-en="Our Mission">مهمتنا</h3>
+        <p data-ar="تقديم خدمات وساطة بحرية واستشارات ملاحية دقيقة وشفّافة ومبتكرة، متجذّرة في القيم السعودية من نزاهة وطموح وتميّز — لتمكين العملاء، ودعم الصناعات الوطنية، والمساهمة في نمو المملكة كمركز عالمي للشحن والطاقة والتجارة." data-en="To deliver precise, transparent and innovative shipbroking and maritime advisory services rooted in Saudi values of integrity, ambition and excellence — empowering clients, supporting national industries, and contributing to Saudi Arabia's growth as a global centre for shipping, energy and trade.">تقديم خدمات وساطة بحرية واستشارات ملاحية دقيقة وشفّافة ومبتكرة، متجذّرة في القيم السعودية من نزاهة وطموح وتميّز — لتمكين العملاء، ودعم الصناعات الوطنية، والمساهمة في نمو المملكة كمركز عالمي للشحن والطاقة والتجارة.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:46px">
+      <p class="eyebrow" data-ar="هويتنا" data-en="Our identity">هويتنا</p>
+      <h2 style="font-size:clamp(24px,2.8vw,34px);margin:12px 0 26px" data-ar="روّاد بحريون <span class='em'>سعوديون</span>" data-en="A Saudi Maritime <span class='em'>Pioneer</span>">روّاد بحريون <span class='em'>سعوديون</span></h2>
+      <ul class="blist">
+      <li><span class="k">٠١</span><p data-ar="أول بيت وساطة بحرية سعودي — نضع معيار التميّز البحري المحلي." data-en="We are the first Saudi shipbroking house, setting the benchmark for local maritime excellence.">أول بيت وساطة بحرية سعودي — نضع معيار التميّز البحري المحلي.</p></li>
+      <li><span class="k">٠٢</span><p data-ar="ندعم أهداف المملكة الاستراتيجية في رؤية 2030، لا سيّما اللوجستيات والطاقة والتنمية الصناعية." data-en="We support the Kingdom's strategic goals under Vision 2030, especially in logistics, energy and industrial development.">ندعم أهداف المملكة الاستراتيجية في رؤية 2030، لا سيّما اللوجستيات والطاقة والتنمية الصناعية.</p></li>
+      <li><span class="k">٠٣</span><p data-ar="نجمع البصيرة السعودية بالمعايير البحرية العالمية، لنمنح عملاءنا ميزة فريدة إقليمياً ودولياً." data-en="We combine Saudi insight with global maritime standards, giving clients a unique advantage in regional and international markets.">نجمع البصيرة السعودية بالمعايير البحرية العالمية، لنمنح عملاءنا ميزة فريدة إقليمياً ودولياً.</p></li>
+      <li><span class="k">٠٤</span><p data-ar="نلتزم ببناء مؤسسة بحرية سعودية راسخة تُسهم في النمو الوطني عبر الأجيال." data-en="We are committed to building a lasting Saudi maritime institution that contributes to national growth for generations.">نلتزم ببناء مؤسسة بحرية سعودية راسخة تُسهم في النمو الوطني عبر الأجيال.</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ WHAT WE DO -->
+<section id="what" class="pad">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow" data-ar="ما نفعله" data-en="What we do">ما نفعله</p>
+      <h2 data-ar="خدمات <span class='em'>الوساطة والاستشارات</span> البحرية" data-en="Full-suite <span class='em'>shipbroking</span> &amp; advisory">خدمات <span class='em'>الوساطة والاستشارات</span> البحرية</h2>
+      <p data-ar="مجموعة كاملة من خدمات الوساطة البحرية والاستشارات المهنية." data-en="A complete suite of professional shipbroking and advisory services.">مجموعة كاملة من خدمات الوساطة البحرية والاستشارات المهنية.</p>
     </div>
     <div class="grid g3">
       <div class="card">
         <div class="num">01</div>
-        <h3 data-ar="استئجار السفن" data-en="Chartering">استئجار السفن</h3>
-        <p data-ar="نبحث عن التونا المناسبة لبضاعتك أو حمولتك — رحلة واحدة، أو زمني، أو إعادة إيجار — ونقود التفاوض حتى التثبيت."
-           data-en="We source the right tonnage for your cargo or your ship — single voyage, time charter, or relet — and run the negotiation through to fixture.">
-           نبحث عن التونا المناسبة لبضاعتك أو حمولتك — رحلة واحدة، أو زمني، أو إعادة إيجار — ونقود التفاوض حتى التثبيت.</p>
+        <h3 data-ar="الاستئجار" data-en="Chartering">الاستئجار</h3>
+        <p data-ar="سائب جاف، ناقلات، غاز، حاويات، MPP، أوفشور" data-en="Dry bulk, tanker, gas, container, MPP, offshore">سائب جاف، ناقلات، غاز، حاويات، MPP، أوفشور</p>
       </div>
       <div class="card">
         <div class="num">02</div>
-        <h3 data-ar="وساطة البضائع" data-en="Cargo broking">وساطة البضائع</h3>
-        <p data-ar="نُطابق عروض الشحنات من التجار والمنتجين مع التونا المتاحة، ونحسب مؤشر الأسعار المناسب للمسار."
-           data-en="We match cargo orders from traders and producers against open tonnage, and price the route on the correct index basis.">
-           نُطابق عروض الشحنات من التجار والمنتجين مع التونا المتاحة، ونحسب مؤشر الأسعار المناسب للمسار.</p>
+        <h3 data-ar="البيع والشراء (S&amp;P)" data-en="Sale &amp; Purchase (S&amp;P)">البيع والشراء (S&amp;P)</h3>
+        <p data-ar="بناء جديد، سفن مستعملة، تقييمات، استراتيجية أسطول" data-en="Newbuilding, secondhand, valuations, fleet strategy">بناء جديد، سفن مستعملة، تقييمات، استراتيجية أسطول</p>
       </div>
       <div class="card">
         <div class="num">03</div>
-        <h3 data-ar="بيع وشراء السفن" data-en="Sale &amp; purchase">بيع وشراء السفن</h3>
-        <p data-ar="وساطة في بيع وشراء الوحدات البحرية: تقييم أولي، عرض على السوق، وتنسيق الفحص والتسليم."
-           data-en="Brokering the sale and purchase of vessels: first-pass valuation, market exposure, and coordination of inspection and delivery.">
-           وساطة في بيع وشراء الوحدات البحرية: تقييم أولي، عرض على السوق، وتنسيق الفحص والتسليم.</p>
+        <h3 data-ar="البحوث والمعلومات البحرية" data-en="Maritime Research &amp; Intelligence">البحوث والمعلومات البحرية</h3>
+        <p data-ar="تقارير السوق، تحليل الأسعار، تدفقات التجارة" data-en="Market reports, freight analysis, trade flows">تقارير السوق، تحليل الأسعار، تدفقات التجارة</p>
       </div>
       <div class="card">
         <div class="num">04</div>
-        <h3 data-ar="معلومات السوق" data-en="Market intelligence">معلومات السوق</h3>
-        <p data-ar="قراءة أسبوعية لحركة التونا والأسعار ومصاريف الموانئ على مساراتنا، بلا حشو."
-           data-en="A weekly read on tonnage supply, rates, and port costs on the lanes we actually cover. No filler.">
-           قراءة أسبوعية لحركة التونا والأسعار ومصاريف الموانئ على مساراتنا، بلا حشو.</p>
+        <h3 data-ar="الاستشارات المالية البحرية" data-en="Maritime Financial Advisory">الاستشارات المالية البحرية</h3>
+        <p data-ar="تمويل السفن، التمويل المهيكل، إدارة المخاطر" data-en="Ship finance, structured finance, risk management">تمويل السفن، التمويل المهيكل، إدارة المخاطر</p>
       </div>
       <div class="card">
         <div class="num">05</div>
-        <h3 data-ar="ما بعد التثبيت" data-en="Post-fixture support">ما بعد التثبيت</h3>
-        <p data-ar="متابعة تجهيز اتفاقية الاستئجار، وجدول الدفعات، والتواصل بين الطرفين حتى الإبحار."
-           data-en="Following through on the charter party, the payment schedule, and communication between the parties through to sailing.">
-           متابعة تجهيز اتفاقية الاستئجار، وجدول الدفعات، والتواصل بين الطرفين حتى الإبحار.</p>
+        <h3 data-ar="دعم الأوفشور والطاقات المتجددة" data-en="Offshore &amp; Renewables Support">دعم الأوفشور والطاقات المتجددة</h3>
+        <p data-ar="سفن أوفشور، لوجستيات الرياح والهيدروجين" data-en="Offshore vessels, wind &amp; hydrogen logistics">سفن أوفشور، لوجستيات الرياح والهيدروجين</p>
       </div>
-      <div class="card" style="border-color:var(--line);background:rgba(201,162,39,.05)">
-        <div class="num" data-ar="العمولة" data-en="COMMISSION">العمولة</div>
-        <h3 data-ar="كيف نتقاضى" data-en="How we are paid">كيف نتقاضى</h3>
-        <p data-ar="عمولة وساطة قياسية على السوق، تُحدَّد في التثبيت وتُذكر في العقد. لا رسوم مقدّمة، ولا حصص مخاطرة."
-           data-en="A standard market brokerage commission, fixed at the fixture and named in the charter party. No upfront fees, no risk share.">
-           عمولة وساطة قياسية على السوق، تُحدَّد في التثبيت وتُذكر في العقد. لا رسوم مقدّمة، ولا حصص مخاطرة.</p>
+      <div class="card">
+        <div class="num">06</div>
+        <h3 data-ar="الحلول البحرية الرقمية" data-en="Digital Maritime Solutions">الحلول البحرية الرقمية</h3>
+        <p data-ar="أدوات استئجار رقمية، لوحات معلومات، تنبؤ بالذكاء الاصطناعي" data-en="Digital chartering tools, dashboards, AI forecasting">أدوات استئجار رقمية، لوحات معلومات، تنبؤ بالذكاء الاصطناعي</p>
       </div>
+    </div>
+    <div style="margin-top:30px">
+      <a class="btn btn-s" href="services.html" data-ar="تفاصيل الخدمات" data-en="Service details">تفاصيل الخدمات</a>
     </div>
   </div>
 </section>
 
-<!-- ============================================================ PROCESS -->
-<section id="process" class="pad">
+<!-- ============================================================ LEADERSHIP TEASER -->
+<section id="leadership" class="pad">
   <div class="wrap">
-    <div class="head">
-      <p class="eyebrow" data-ar="كيف نعمل" data-en="02 — How we work">كيف نعمل</p>
-      <h2 data-ar="من العرض إلى التثبيت" data-en="Offer to fixture">من العرض إلى <span class="em">التثبيت</span></h2>
-      <p data-ar="خمس خطوات واضحة. تعرف دائماً في أي مرحلة أنت، ومن يملك القرار."
-         data-en="Five clear steps. You always know which stage you are in, and who holds the decision.">
-         خمس خطوات واضحة. تعرف دائماً في أي مرحلة أنت، ومن يملك القرار.</p>
-    </div>
-    <div class="steps">
-      <div class="step"><div class="k">01</div><div>
-        <h3 data-ar="العرض" data-en="The offer">العرض</h3>
-        <p data-ar="تصلنا البضاعة أو الحمولة: النوع، الحجم، الميناء، ونافذة التحميل. نطلب ما ينقص ونوضّح ما هو غير قابل للتنفيذ."
-           data-en="The cargo or the vessel comes in: type, size, port, and laycan. We ask for what is missing and say plainly what does not work.">
-           تصلنا البضاعة أو الحمولة: النوع، الحجم، الميناء، ونافذة التحميل. نطلب ما ينقص ونوضّح ما هو غير قابل للتنفيذ.</p>
-      </div></div>
-      <div class="step"><div class="k">02</div><div>
-        <h3 data-ar="المطابقة" data-en="Matching">المطابقة</h3>
-        <p data-ar="نعرض على الملاك والتجار المناسبين فقط. لا نوزّع العرض على السوق كاملاً بحثاً عن رقم أعلى."
-           data-en="We take it to the owners and traders who fit, and only them. We do not blast the order across the market fishing for a better number.">
-           نعرض على الملاك والتجار المناسبين فقط. لا نوزّع العرض على السوق كاملاً بحثاً عن رقم أعلى.</p>
-      </div></div>
-      <div class="step"><div class="k">03</div><div>
-        <h3 data-ar="التفاوض" data-en="Negotiation">التفاوض</h3>
-        <p data-ar="نقود المفاوضة على الأجرة والشروط، ونطرح على الطرفين البدائل لا الإنذارات."
-           data-en="We run the negotiation on rate and terms, and put alternatives to both sides rather than ultimatums.">
-           نقود المفاوضة على الأجرة والشروط، ونطرح على الطرفين البدائل لا الإنذارات.</p>
-      </div></div>
-      <div class="step"><div class="k">04</div><div>
-        <h3 data-ar="التثبيت" data-en="Fixing">التثبيت</h3>
-        <p data-ar="يُصدر الملخص (Recap) ويُثبَّت الطرفان. اسمنا يظهر في سطر الوسيط، لا في سطر المستأجر."
-           data-en="The recap goes out and both sides are fixed. Our name appears on the broker line — never on the charterer line.">
-           يُصدر الملخص (Recap) ويُثبَّت الطرفان. اسمنا يظهر في سطر الوسيط، لا في سطر المستأجر.</p>
-      </div></div>
-      <div class="step"><div class="k">05</div><div>
-        <h3 data-ar="اتفاقية الاستئجار" data-en="The charter party">اتفاقية الاستئجار</h3>
-        <p data-ar="تُجهَّز الاتفاقية على الصيغة المتفق عليها، وتُذكر العمولة، ونتابع التنفيذ حتى الإبحار."
-           data-en="The charter party is drawn on the agreed form, the commission is named, and we stay on it through sailing.">
-           تُجهَّز الاتفاقية على الصيغة المتفق عليها، وتُذكر العمولة، ونتابع التنفيذ حتى الإبحار.</p>
-      </div></div>
+    <div class="band">
+      <p class="eyebrow" data-ar="القيادة" data-en="Leadership">القيادة</p>
+      <h2 data-ar="العقل <span class='em'>خلف</span> بيت الشحن السعودي" data-en="The mind <span class='em'>behind</span> Saudi Shipping House">العقل <span class='em'>خلف</span> بيت الشحن السعودي</h2>
+      <p data-ar="بيت الشحن السعودي يقوده تنفيذي بخبرة اثنتين وعشرين سنة في كبرى الشركات العالمية، وعمق عملي في سلاسل الإمداد، والعقود، والتجارة الدولية — مع تكوين متخصّص في الاستئجار البحري من أعرق الأكاديميات." data-en="Saudi Shipping House is led by an executive with 22 years of experience in global corporations, deep operational grounding in supply chains, contracting and international trade — and formal maritime chartering training from the industry's leading academies.">بيت الشحن السعودي يقوده تنفيذي بخبرة اثنتين وعشرين سنة في كبرى الشركات العالمية، وعمق عملي في سلاسل الإمداد، والعقود، والتجارة الدولية — مع تكوين متخصّص في الاستئجار البحري من أعرق الأكاديميات.</p>
+      <a class="btn btn-p" href="leadership.html" data-ar="تعرّف على القيادة" data-en="Meet the leadership">تعرّف على القيادة</a>
     </div>
   </div>
 </section>
 
-<!-- ============================================================ DISCIPLINE -->
-<section id="discipline" class="pad">
+<!-- ============================================================ CONTACT TEASER -->
+<section class="pad-sm">
   <div class="wrap">
-    <div class="head">
-      <p class="eyebrow" data-ar="حدود عملنا" data-en="03 — Our boundaries">حدود عملنا</p>
-      <h2 data-ar="ما نحن، وما لسنا" data-en="What we are, what we are not">ما نحن، و<span class="em">ما لسنا</span></h2>
-      <p data-ar="الوسيط الذي يقول كل شيء لا يُصدَّق في شيء. هذا ما نلتزم به، وما نرفضه صراحةً."
-         data-en="A broker who claims everything is believed on nothing. Here is what we commit to, and what we refuse outright.">
-         الوسيط الذي يقول كل شيء لا يُصدَّق في شيء. هذا ما نلتزم به، وما نرفضه صراحةً.</p>
-    </div>
-    <div class="dd">
-      <div class="box yes">
-        <h4><span class="tag" data-ar="نعم" data-en="YES">نعم</span> <span data-ar="نلتزم به" data-en="we commit to this">نلتزم به</span></h4>
-        <ul>
-          <li data-ar="وساطة فقط — اسمنا في سطر الوسيط" data-en="Brokerage only — our name on the broker line">وساطة فقط — اسمنا في سطر الوسيط</li>
-          <li data-ar="عمولة معروفة ومذكورة في العقد" data-en="A commission that is known and named in the charter party">عمولة معروفة ومذكورة في العقد</li>
-          <li data-ar="رد على كل استفسار داخل ٢٤ ساعة" data-en="A reply to every enquiry within 24 hours">رد على كل استفسار داخل ٢٤ ساعة</li>
-          <li data-ar="الإفصاح عن الطرف المقابل بمجرد الطلب" data-en="Disclosing the counterparty the moment we are asked">الإفصاح عن الطرف المقابل بمجرد الطلب</li>
-        </ul>
-      </div>
-      <div class="box no">
-        <h4><span class="tag" data-ar="لا" data-en="NO">لا</span> <span data-ar="نرفضه" data-en="we will not do this">نرفضه</span></h4>
-        <ul>
-          <li data-ar="لا نملك سفناً ولا نُشغّلها" data-en="Own or operate no vessels">لا نملك سفناً ولا نُشغّلها</li>
-          <li data-ar="لا نتاجر بالبضاعة ولا نتحمّل مخاطر الرحلة" data-en="Trade no cargo and carry no voyage risk">لا نتاجر بالبضاعة ولا نتحمّل مخاطر الرحلة</li>
-          <li data-ar="لا نعمل وكيلاً في الميناء ولا نخلّص شحنات" data-en="Act as a port agent, or clear cargo">لا نعمل وكيلاً في الميناء ولا نخلّص شحنات</li>
-          <li data-ar="لا نوسّط على جانبَي التثبيت معاً في صفقة واحدة" data-en="Broker both sides of the same fixture">لا نوسّط على جانبَي التثبيت معاً في صفقة واحدة</li>
-        </ul>
-      </div>
-    </div>
-
-    <div style="margin-top:44px">
-      <div class="stats">
-        <div class="stat"><div class="v">24h</div><div class="l" data-ar="حد الرد على الاستفسار" data-en="Enquiry response window">حد الرد على الاستفسار</div></div>
-        <div class="stat"><div class="v">2</div><div class="l" data-ar="لغتان: عربي وإنجليزي" data-en="Languages: Arabic and English">لغتان: عربي وإنجليزي</div></div>
-        <div class="stat"><div class="v">GULF</div><div class="l" data-ar="التغطية: الخليج والبحر الأحمر" data-en="Coverage: Gulf and Red Sea">التغطية: الخليج والبحر الأحمر</div></div>
-        <div class="stat"><div class="v">0</div><div class="l" data-ar="سفن نملكها — بلا تضارب مصالح" data-en="Ships owned — no conflict of interest">سفن نملكها — بلا تضارب مصالح</div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================ CONTACT -->
-<section id="contact" class="pad">
-  <div class="wrap">
-    <div class="head">
-      <p class="eyebrow" data-ar="تواصل" data-en="04 — Contact">تواصل</p>
-      <h2 data-ar="أرسل الشحنة أو الحمولة" data-en="Send the cargo or the tonnage">أرسل الشحنة أو <span class="em">الحمولة</span></h2>
-      <p data-ar="كل استفسار يصل إلى مكتب الرياض مباشرة. نرد داخل يوم عمل واحد."
-         data-en="Every enquiry lands at the Riyadh office directly. We reply within one working day.">
-         كل استفسار يصل إلى مكتب الرياض مباشرة. نرد داخل يوم عمل واحد.</p>
-    </div>
-    <div class="contact">
-      <div>
-        <div class="crow"><span class="k" data-ar="البريد" data-en="Email">البريد</span>
-          <span class="v"><strong>info@sshs.sa</strong></span></div>
-        <div class="crow"><span class="k" data-ar="الشحنات" data-en="Chartering">الشحنات</span>
-          <span class="v"><strong>chartering@sshs.sa</strong></span></div>
-        <div class="crow"><span class="k" data-ar="الموقع" data-en="Location">الموقع</span>
-          <span class="v" data-ar="الرياض، المملكة العربية السعودية" data-en="Riyadh, Kingdom of Saudi Arabia">الرياض، المملكة العربية السعودية</span></div>
-        <div class="crow"><span class="k" data-ar="الهاتف" data-en="Phone">الهاتف</span>
-          <span class="v"><span class="ph">[ +966  __ ___ ____ ]</span></span></div>
-        <div class="crow"><span class="k" data-ar="السجل التجاري" data-en="CR No.">السجل التجاري</span>
-          <span class="v"><span class="ph" data-ar="[ يُستكمل بعد التسجيل ]" data-en="[ to be completed after registration ]">[ يُستكمل بعد التسجيل ]</span></span></div>
-        <p class="note" data-ar="يُرسل الاستفسار مع: نوع البضاعة، الحجم بالطن، ميناء التحميل والتفريغ، ونافذة التحميل (Laycan)."
-           data-en="Send with your enquiry: commodity, quantity in tonnes, load and discharge ports, and laycan.">
-           يُرسل الاستفسار مع: نوع البضاعة، الحجم بالطن، ميناء التحميل والتفريغ، ونافذة التحميل (Laycan).</p>
-      </div>
-      <div class="crest" style="display:flex;justify-content:center;align-items:center">
-        <img src="assets/img/logo.svg" alt="" style="width:230px;opacity:.95">
-      </div>
-    </div>
+    <div class="note" style="max-width:70ch;margin:0 auto;text-align:center" data-ar="كل استفسار يصل إلى مكتب الرياض مباشرة. نرد داخل يوم عمل واحد." data-en="Every enquiry lands at the Riyadh office directly. We reply within one working day.">
+      كل استفسار يصل إلى مكتب الرياض مباشرة. نرد داخل يوم عمل واحد.</div>
   </div>
 </section>
 
 </main>
 
-<!-- ============================================================ FOOTER -->
 <footer>
   <div class="wrap">
     <div class="fgrid">
       <div>
         <img src="assets/img/logo.svg" alt="Saudi Shipping House">
-        <p data-ar="بيت الشحن السعودي — وساطة بحرية واستئجار سفن. نعمل من الرياض على الخليج والبحر الأحمر."
-           data-en="Saudi Shipping House — shipbroking and chartering, working from Riyadh across the Gulf and the Red Sea.">
-           بيت الشحن السعودي — وساطة بحرية واستئجار سفن. نعمل من الرياض على الخليج والبحر الأحمر.</p>
+        <p data-ar="بيت الشحن السعودي — أول بيت وساطة بحرية سعودي. وساطة واستشارات بحرية من الرياض إلى الخليج والبحر الأحمر والعالم." data-en="Saudi Shipping House — the first Saudi shipbroking house. Maritime brokerage and advisory from Riyadh across the Gulf, the Red Sea and beyond.">بيت الشحن السعودي — أول بيت وساطة بحرية سعودي. وساطة واستشارات بحرية من الرياض إلى الخليج والبحر الأحمر والعالم.</p>
       </div>
       <div class="fcol">
         <h5 data-ar="الصفحات" data-en="Site">الصفحات</h5>
-        <a href="#services" data-ar="خدماتنا" data-en="Services">خدماتنا</a>
-        <a href="#process" data-ar="كيف نعمل" data-en="How we work">كيف نعمل</a>
-        <a href="#discipline" data-ar="حدود عملنا" data-en="Boundaries">حدود عملنا</a>
-        <a href="#contact" data-ar="تواصل" data-en="Contact">تواصل</a>
+        <a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+        <a href="about.html" data-ar="من نحن" data-en="About">من نحن</a>
+        <a href="services.html" data-ar="خدماتنا" data-en="Services">خدماتنا</a>
+        <a href="leadership.html" data-ar="القيادة" data-en="Leadership">القيادة</a>
+        <a href="contact.html" data-ar="تواصل" data-en="Contact">تواصل</a>
       </div>
       <div class="fcol">
         <h5 data-ar="تواصل" data-en="Contact">تواصل</h5>
@@ -466,21 +190,24 @@ html[lang="ar"] .fcol h5{font-family:'PlexAr',sans-serif;letter-spacing:0;font-s
         <a href="mailto:chartering@sshs.sa">chartering@sshs.sa</a>
         <a href="https://sshs.sa">sshs.sa</a>
       </div>
+      <div class="fcol">
+        <h5 data-ar="المقر" data-en="Office">المقر</h5>
+        <a href="contact.html" data-ar="الرياض، السعودية" data-en="Riyadh, Saudi Arabia">الرياض، السعودية</a>
+        <a href="leadership.html" data-ar="القيادة" data-en="Leadership">القيادة</a>
+      </div>
     </div>
     <div class="legal">
       <div>© <span id="yr">2026</span> <span data-ar="بيت الشحن السعودي" data-en="Saudi Shipping House">بيت الشحن السعودي</span></div>
-      <div class="r" data-ar="بيت الشحن السعودي للوساطة البحرية — سجل تجاري رقم [ يُستكمل ]. تعمل الشركة كوسيط بحري فقط، ولا تملك سفناً ولا تُشغّلها ولا تتاجر بالبضاعة."
-           data-en="Saudi Shipping House for Maritime Brokerage — CR No. [ to be completed ]. The company acts as a shipbroker only. It owns no vessels, operates no vessels, and trades no cargo.">
-           بيت الشحن السعودي للوساطة البحرية — سجل تجاري رقم [ يُستكمل ]. تعمل الشركة كوسيط بحري فقط، ولا تملك سفناً ولا تُشغّلها ولا تتاجر بالبضاعة.</div>
+      <div class="r" data-ar="بيت الشحن السعودي للوساطة البحرية — سجل تجاري رقم [ يُستكمل ]. تعمل الشركة كوسيط ومستشار بحري فقط، ولا تملك سفناً ولا تُشغّلها ولا تتاجر بالبضاعة." data-en="Saudi Shipping House for Maritime Brokerage — CR No. [ to be completed ]. The company acts as a shipbroker and maritime adviser only. It owns no vessels, operates no vessels, and trades no cargo.">بيت الشحن السعودي للوساطة البحرية — سجل تجاري رقم [ يُستكمل ]. تعمل الشركة كوسيط ومستشار بحري فقط، ولا تملك سفناً ولا تُشغّلها ولا تتاجر بالبضاعة.</div>
     </div>
   </div>
 </footer>
-
 <script>
 /* ---------------------------------------------------------------- i18n */
 (function(){
-  var original = {};           // stores the Arabic markup for every node (source of truth)
+  var original = {};
   var titleAr = document.title;
+  var titleEn = document.documentElement.getAttribute('data-title-en') || titleAr;
   var nodes = document.querySelectorAll('[data-ar]');
   nodes.forEach(function(n,i){ original[i] = n.innerHTML; });
 
@@ -489,33 +216,30 @@ html[lang="ar"] .fcol h5{font-family:'PlexAr',sans-serif;letter-spacing:0;font-s
     document.documentElement.dir  = (lang === 'ar') ? 'rtl' : 'ltr';
     nodes.forEach(function(n,i){
       var val = n.getAttribute(lang === 'ar' ? 'data-ar' : 'data-en');
-      if (lang === 'ar') { n.innerHTML = original[i]; }   // restore rich markup
+      if (lang === 'ar') { n.innerHTML = original[i]; }
       else if (val !== null) { n.innerHTML = val; }
     });
-    document.getElementById('langbtn').textContent = (lang === 'ar') ? 'EN' : 'عربي';
-    document.title = (lang === 'ar')
-      ? titleAr
-      : 'Saudi Shipping House | Saudi Shipbroking & Chartering — Riyadh';
+    var b = document.getElementById('langbtn');
+    if (b) b.textContent = (lang === 'ar') ? 'EN' : 'عربي';
+    document.title = (lang === 'ar') ? titleAr : titleEn;
     try { localStorage.setItem('ssh-lang', lang); } catch(e){}
   }
 
-  document.getElementById('langbtn').addEventListener('click', function(){
+  var b = document.getElementById('langbtn');
+  if (b) b.addEventListener('click', function(){
     setLang(document.documentElement.lang === 'ar' ? 'en' : 'ar');
   });
 
-  /* restore remembered language */
   var saved = null;
   try { saved = localStorage.getItem('ssh-lang'); } catch(e){}
   if (saved === 'en') setLang('en');
 
-  /* close mobile menu on link tap */
   document.querySelectorAll('nav.links a').forEach(function(a){
     a.addEventListener('click', function(){
-      document.querySelector('nav.links').classList.remove('open');
+      var n = document.querySelector('nav.links'); if (n) n.classList.remove('open');
     });
   });
-
-  document.getElementById('yr').textContent = new Date().getFullYear();
+  var y = document.getElementById('yr'); if (y) y.textContent = new Date().getFullYear();
 })();
 </script>
 </body>
