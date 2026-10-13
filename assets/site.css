@@ -77,7 +77,7 @@ nav.links a:hover,nav.links a[aria-current="page"]{color:var(--paper);border-bot
 }
 
 /* ---------------------------------------------------------------- hero */
-.hero{position:relative;padding:96px 0 84px;border-top:none;overflow:hidden;
+.hero{position:relative;padding:96px 0 150px;border-top:none;overflow:hidden;
   background:linear-gradient(180deg,
     var(--navy) 0%,
     var(--navy-2) 20%,
@@ -94,6 +94,7 @@ html[lang="en"] .hero h1{font-size:clamp(38px,5.4vw,72px)}
 .hero h1 .em{color:var(--brass)}
 .lede{font-size:18px;color:var(--dim);max-width:62ch;margin-bottom:30px}
 .hero .crest{display:flex;justify-content:center}
+.hero .crest .shine{width:100%;max-width:330px}
 .hero .crest img{width:100%;max-width:330px;filter:drop-shadow(0 18px 44px rgba(0,0,0,.5))}
 .chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px}
 .chip{font-family:'JBM',monospace;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;
@@ -328,3 +329,55 @@ html[lang="ar"] .fcol h5{font-family:'PlexAr',sans-serif;letter-spacing:0;font-s
 .letter .sig .nm{font-weight:700;color:var(--paper);font-size:16px}
 .letter .sig .rl{font-size:13px;color:var(--brass);margin-top:3px}
 @media(max-width:640px){.letter{padding:28px 22px}.letter::before{top:28px;bottom:28px}}
+
+/* ============================================================ LOGO SHINE
+   A glint that sweeps the mark + twinkling sparkles.
+   The sheen is MASKED to the logo's alpha channel, so the light follows the palm
+   and anchor silhouette instead of sweeping a rectangle. Pure CSS, no JS.
+*/
+.shine{position:relative;display:inline-block;line-height:0;max-width:100%;isolation:isolate}
+.shine > img{display:block;width:100%;height:auto}
+
+/* ---- the glint (masked to the silhouette) ---- */
+.shine::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  -webkit-mask:url("img/logo-mark.png") center / contain no-repeat;
+          mask:url("img/logo-mark.png") center / contain no-repeat;
+  background:linear-gradient(105deg,
+    rgba(255,255,255,0)   40%,
+    rgba(255,255,255,.22) 46%,
+    rgba(232,206,121,.66) 50%,
+    rgba(255,255,255,.22) 54%,
+    rgba(255,255,255,0)   60%);
+  background-size:260% 100%;
+  background-repeat:no-repeat;
+  background-position:200% 0;
+  mix-blend-mode:screen;
+  animation:logoSheen 6s ease-in-out infinite;
+}
+@keyframes logoSheen{
+  0%, 66%   {background-position:200% 0}
+  92%, 100% {background-position:-110% 0}
+}
+
+/* ---- sparkles ---- */
+.spark{
+  position:absolute;width:18px;height:18px;pointer-events:none;opacity:0;z-index:2;
+  background:radial-gradient(circle,#fff 0%,rgba(255,255,255,.6) 38%,rgba(255,255,255,0) 70%);
+  clip-path:polygon(50% 0%,58% 42%,100% 50%,58% 58%,50% 100%,42% 58%,0% 50%,42% 42%);
+  animation:sparkTwinkle 6s ease-in-out infinite;
+}
+.spark.s1{top:12%;left:28%}
+.spark.s2{top:33%;right:11%;width:23px;height:23px;animation-delay:1.6s}
+.spark.s3{top:63%;left:15%;width:14px;height:14px;animation-delay:3.1s}
+.spark.s4{top:21%;right:32%;width:12px;height:12px;animation-delay:4.4s}
+@keyframes sparkTwinkle{
+  0%, 74% {opacity:0;transform:scale(.25) rotate(0deg)}
+  82%     {opacity:1;transform:scale(1) rotate(45deg)}
+  91%     {opacity:0;transform:scale(.35) rotate(90deg)}
+  100%    {opacity:0}
+}
+@media(prefers-reduced-motion:reduce){
+  .shine::after{animation:none;background-position:-999px 0}
+  .spark{animation:none;opacity:0}
+}
